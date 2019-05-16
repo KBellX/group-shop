@@ -1,0 +1,2329 @@
+---------------------------------------------------------------
+[2019-05-08T17:00:59+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.049034s] [吞吐率：20.39req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:00:59+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.050070s] [吞吐率：19.97req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:00:59+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.075340s] [吞吐率：13.27req/s] [内存消耗：1,271.25kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009242s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.002566s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.002824s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.005759s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 LIMIT 1 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[2019-05-08T17:00:59+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.075424s] [吞吐率：13.26req/s] [内存消耗：1,169.55kb] [文件加载：79]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004330s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.008517s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.002078s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 20,20 [ RunTime:0.000936s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:02+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.021869s] [吞吐率：45.73req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:02+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.021414s] [吞吐率：46.70req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:02+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.038209s] [吞吐率：26.17req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002133s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.002544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:02+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.045987s] [吞吐率：21.75req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001512s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.004812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.002870s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.001855s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.001747s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:05+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.012308s] [吞吐率：81.25req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:05+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.010493s] [吞吐率：95.30req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:05+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.050210s] [吞吐率：19.92req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001208s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.003464s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.002609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.008951s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:05+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.056858s] [吞吐率：17.59req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003325s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.001892s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.002131s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.003326s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.016667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000535s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:25+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.008170s] [吞吐率：122.40req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:25+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.028634s] [吞吐率：34.92req/s] [内存消耗：1,154.23kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>/address/default',
+  'route' => 'api/:version.Address/getDefaultAddress',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'referer' => 'http://localhost:8080/order_confirm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = '6c4a0eea1eb3f25ea0a0f7b52f12d643' LIMIT 1 [ RunTime:0.001261s ]
+[ error ] [3001]令牌失效过期[/data/group_shop/application/api/service/token/Db.php:65]
+---------------------------------------------------------------
+[2019-05-08T17:01:25+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.007097s] [吞吐率：140.90req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:25+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.020422s] [吞吐率：48.97req/s] [内存消耗：1,262.35kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '95',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/order_confirm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6c4a0eea1eb3f25ea0a0f7b52f12d643',
+  'refresh_token' => 'a181d2b7b34c742d6910e9da5e726baf',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = '6c4a0eea1eb3f25ea0a0f7b52f12d643'  AND `refresh_token` = 'a181d2b7b34c742d6910e9da5e726baf'  AND `update_at` >= '2019-05-07 17:01:25' LIMIT 1 [ RunTime:0.000419s ]
+[ error ] [3002]刷新token无效[/data/group_shop/application/api/service/token/Db.php:44]
+---------------------------------------------------------------
+[2019-05-08T17:01:28+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.058110s] [吞吐率：17.21req/s] [内存消耗：1,270.55kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004164s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.002263s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.003060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.002717s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:28+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.057618s] [吞吐率：17.36req/s] [内存消耗：1,337.00kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002751s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.002013s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.005502s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.003136s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000236s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:36+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.006357s] [吞吐率：157.31req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:36+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.018197s] [吞吐率：54.95req/s] [内存消耗：1,258.52kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/login',
+  'route' => 'api/:version.User/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/login?redirect=%2Fdetail%3Fid%3D9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15581646116',
+  'password' => 'KBellX',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001057s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user` WHERE  `data_state` = 1  AND `username` = '15581646116' LIMIT 1 [ RunTime:0.000991s ]
+[ error ] [3000]用户名或密码错误[/data/group_shop/application/api/service/User.php:29]
+---------------------------------------------------------------
+[2019-05-08T17:01:45+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.005639s] [吞吐率：177.34req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:45+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.016835s] [吞吐率：59.40req/s] [内存消耗：1,258.52kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/login',
+  'route' => 'api/:version.User/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/login?redirect=%2Fdetail%3Fid%3D9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15581646116',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user` WHERE  `data_state` = 1  AND `username` = '15581646116' LIMIT 1 [ RunTime:0.001358s ]
+[ error ] [3000]用户名或密码错误[/data/group_shop/application/api/service/User.php:29]
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.007548s] [吞吐率：132.49req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.089307s] [吞吐率：11.20req/s] [内存消耗：1,317.96kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/login',
+  'route' => 'api/:version.User/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/login?redirect=%2Fdetail%3Fid%3D9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'KBellX',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user` WHERE  `data_state` = 1  AND `username` = 'KBellX' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `user_id` = 2 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] UPDATE `gb_user_token`  SET `token` = '6a5b0987efab5bf93925756df216ad7f' , `refresh_token` = 'dd176fb7b39b330ec743b4067f10d114' , `update_at` = '2019-05-08 17:01:51.000000'  WHERE  `id` = 2 [ RunTime:0.001903s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.015633s] [吞吐率：63.97req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.014242s] [吞吐率：70.22req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.033920s] [吞吐率：29.48req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003280s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.003341s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.002697s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[2019-05-08T17:01:51+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.041146s] [吞吐率：24.30req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000938s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.001639s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.004533s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[2019-05-08T17:02:00+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.007266s] [吞吐率：137.63req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:02:00+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.024198s] [吞吐率：41.33req/s] [内存消耗：1,252.45kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>/address/default',
+  'route' => 'api/:version.Address/getDefaultAddress',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/order_confirm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.002063s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = '6a5b0987efab5bf93925756df216ad7f' LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_address` [ RunTime:0.002425s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_address` WHERE  `data_state` = 1  AND `user_id` = 2 LIMIT 1 [ RunTime:0.001632s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_address` WHERE  `data_state` = 1  AND `user_id` = 2 ORDER BY `is_default` DESC,`id` DESC [ RunTime:0.001757s ]
+---------------------------------------------------------------
+[2019-05-08T17:02:05+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.007918s] [吞吐率：126.30req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:02:05+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.015577s] [吞吐率：64.20req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T17:02:05+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.034809s] [吞吐率：28.73req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002874s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.004925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[2019-05-08T17:02:05+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.075473s] [吞吐率：13.25req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003499s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.006218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.002135s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.001476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.012722s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.015941s ]
+---------------------------------------------------------------
+[2019-05-08T19:42:09+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.021545s] [吞吐率：46.41req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T19:42:09+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.042579s] [吞吐率：23.49req/s] [内存消耗：1,154.81kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001508s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = '6a5b0987efab5bf93925756df216ad7f' LIMIT 1 [ RunTime:0.001409s ]
+[ error ] [3001]令牌失效过期[/data/group_shop/application/api/service/token/Db.php:65]
+---------------------------------------------------------------
+[2019-05-08T19:42:09+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.005260s] [吞吐率：190.11req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T19:42:09+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.026422s] [吞吐率：37.85req/s] [内存消耗：1,249.43kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '95',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6a5b0987efab5bf93925756df216ad7f',
+  'refresh_token' => 'dd176fb7b39b330ec743b4067f10d114',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001319s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = '6a5b0987efab5bf93925756df216ad7f'  AND `refresh_token` = 'dd176fb7b39b330ec743b4067f10d114'  AND `update_at` >= '2019-05-07 19:42:09' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] UPDATE `gb_user_token`  SET `token` = 'd9d3eb21bdc2a2b2b4527225180655a4' , `refresh_token` = 'eb283d4434fa45c28ae448f452b5e8e6' , `update_at` = '2019-05-08 19:42:09.000000'  WHERE  `id` = 2 [ RunTime:0.001440s ]
+---------------------------------------------------------------
+[2019-05-08T19:42:10+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.005718s] [吞吐率：174.89req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T19:42:10+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.017658s] [吞吐率：56.63req/s] [内存消耗：1,204.13kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'd9d3eb21bdc2a2b2b4527225180655a4',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001364s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'd9d3eb21bdc2a2b2b4527225180655a4' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`email` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[2019-05-08T19:42:15+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/logout
+[运行时间：0.004904s] [吞吐率：203.91req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T19:42:15+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/logout
+[运行时间：0.014046s] [吞吐率：71.19req/s] [内存消耗：1,140.45kb] [文件加载：82]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/logout',
+  'route' => 'api/:version.User/logout',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'd9d3eb21bdc2a2b2b4527225180655a4',
+  'referer' => 'http://localhost:8080/setting',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000298s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'd9d3eb21bdc2a2b2b4527225180655a4' LIMIT 1 [ RunTime:0.000909s ]
+---------------------------------------------------------------
+[2019-05-08T20:13:02+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.004083s] [吞吐率：244.91req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:13:02+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/login
+[运行时间：0.092208s] [吞吐率：10.85req/s] [内存消耗：1,317.87kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/login',
+  'route' => 'api/:version.User/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:8080/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'KBellX',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user` WHERE  `data_state` = 1  AND `username` = 'KBellX' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `user_id` = 2 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] UPDATE `gb_user_token`  SET `token` = 'f5ed26e603cc76e796540c48f16fce80' , `refresh_token` = '9873b7f20ff00f775ca5a8e12b76e8e7' , `update_at` = '2019-05-08 20:13:02.000000'  WHERE  `id` = 2 [ RunTime:0.003051s ]
+---------------------------------------------------------------
+[2019-05-08T20:13:02+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.019297s] [吞吐率：51.82req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:13:02+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.015773s] [吞吐率：63.40req/s] [内存消耗：1,204.13kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`email` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:05+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.006774s] [吞吐率：147.62req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:05+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.018027s] [吞吐率：55.47req/s] [内存消耗：1,204.13kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001250s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`email` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.014192s] [吞吐率：70.46req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.013554s] [吞吐率：73.78req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.034642s] [吞吐率：28.87req/s] [内存消耗：1,169.55kb] [文件加载：79]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002718s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.003726s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 20,20 [ RunTime:0.000937s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.044877s] [吞吐率：22.28req/s] [内存消耗：1,271.25kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005248s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.002059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=3&limit=20
+[运行时间：0.005433s] [吞吐率：184.06req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:06+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=3&limit=20
+[运行时间：0.017266s] [吞吐率：57.92req/s] [内存消耗：1,169.55kb] [文件加载：79]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001206s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 40,20 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:07+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.012111s] [吞吐率：82.57req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:07+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.011923s] [吞吐率：83.87req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:07+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.043016s] [吞吐率：23.25req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001535s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.003153s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.003895s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:07+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.038651s] [吞吐率：25.87req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.003016s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.001160s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:09+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.011820s] [吞吐率：84.60req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:09+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.010575s] [吞吐率：94.56req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:26:09+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.043880s] [吞吐率：22.79req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005406s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.002671s ]
+---------------------------------------------------------------
+[2019-05-08T20:26:09+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.041959s] [吞吐率：23.83req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002465s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.002813s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.002741s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.003908s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[2019-05-08T20:35:53+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.007303s] [吞吐率：136.93req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:35:53+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/address/default
+[运行时间：0.021594s] [吞吐率：46.31req/s] [内存消耗：1,252.45kb] [文件加载：85]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>/address/default',
+  'route' => 'api/:version.Address/getDefaultAddress',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_confirm',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000303s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_address` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_address` WHERE  `data_state` = 1  AND `user_id` = 2 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_address` WHERE  `data_state` = 1  AND `user_id` = 2 ORDER BY `is_default` DESC,`id` DESC [ RunTime:0.001114s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:39+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.004604s] [吞吐率：217.20req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:39+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.017224s] [吞吐率：58.06req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:39+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9
+[运行时间：0.027153s] [吞吐率：36.83req/s] [内存消耗：1,270.78kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>',
+  'route' => 'api/:version.goods/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002241s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1  AND `id` = 9 LIMIT 1 [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:39+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/9/grouping
+[运行时间：0.036907s] [吞吐率：27.10req/s] [内存消耗：1,337.30kb] [文件加载：86]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/<id>/grouping',
+  'route' => 'api/:version.goods/grouping',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '9',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/detail?id=9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002044s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `order_id` FROM `gb_order_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.002841s ]
+[ sql ] [ SQL ] SELECT `id`,`p_id`,`user_id`,`status`,`validity`,`create_at` FROM `gb_order` WHERE  `data_state` = 1  AND `id` IN (12,13,14,15) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.002892s ]
+[ sql ] [ SQL ] SELECT `avatar`,`nickname` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.009581s] [吞吐率：104.37req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.014077s] [吞吐率：71.04req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=2&limit=20
+[运行时间：0.023999s] [吞吐率：41.67req/s] [内存消耗：1,169.55kb] [文件加载：79]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004420s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 20,20 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=1&limit=20
+[运行时间：0.037197s] [吞吐率：26.88req/s] [内存消耗：1,271.25kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003805s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.003276s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_group_goods` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_group_goods` WHERE  `data_state` = 1  AND `goods_id` = 9 LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/goods/list?page=3&limit=20
+[运行时间：0.006367s] [吞吐率：157.06req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:41+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/goods/list?page=3&limit=20
+[运行时间：0.011147s] [吞吐率：89.71req/s] [内存消耗：1,169.55kb] [文件加载：79]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.goods/list',
+  'route' => 'api/:version.goods/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/cate',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'limit' => '20',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_goods` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`thum`,`market_price`,`sell_price` FROM `gb_goods` WHERE  `data_state` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 40,20 [ RunTime:0.000389s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:42+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.005956s] [吞吐率：167.90req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:42+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.016646s] [吞吐率：60.07req/s] [内存消耗：1,204.13kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`email` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:44+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list?status=4
+[运行时间：0.006629s] [吞吐率：150.85req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:44+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list?status=4
+[运行时间：0.029593s] [吞吐率：33.79req/s] [内存消耗：1,325.00kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list?status=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'status' => '4',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001128s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `status` = 4  AND `user_id` = 2 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:46+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list?status=5
+[运行时间：0.007076s] [吞吐率：141.33req/s] [内存消耗：475.20kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:46+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list?status=5
+[运行时间：0.016821s] [吞吐率：59.45req/s] [内存消耗：1,325.00kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list?status=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'status' => '5',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000714s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `status` = 5  AND `user_id` = 2 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:47+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list?status=4
+[运行时间：0.004524s] [吞吐率：221.04req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:47+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list?status=4
+[运行时间：0.016691s] [吞吐率：59.91req/s] [内存消耗：1,325.00kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list?status=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'status' => '4',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `status` = 4  AND `user_id` = 2 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:48+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list?status=3
+[运行时间：0.006915s] [吞吐率：144.62req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:48+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list?status=3
+[运行时间：0.018282s] [吞吐率：54.70req/s] [内存消耗：1,325.00kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list?status=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'status' => '3',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `status` = 3  AND `user_id` = 2 [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:48+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list?status=2
+[运行时间：0.004773s] [吞吐率：209.51req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:48+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list?status=2
+[运行时间：0.022459s] [吞吐率：44.53req/s] [内存消耗：1,334.09kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list?status=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'status' => '2',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000252s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `status` = 2  AND `user_id` = 2 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` IN (12) [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[2019-05-08T20:37:50+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/12
+[运行时间：0.006529s] [吞吐率：153.16req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:37:50+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/12
+[运行时间：0.021179s] [吞吐率：47.22req/s] [内存消耗：1,334.14kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/<id>',
+  'route' => 'api/:version.order/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '12',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_detail?id=12',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `id` = 12 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` = 12 [ RunTime:0.002037s ]
+---------------------------------------------------------------
+[2019-05-08T20:38:02+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.007389s] [吞吐率：135.34req/s] [内存消耗：475.17kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:38:02+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.025719s] [吞吐率：38.88req/s] [内存消耗：1,338.13kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `user_id` = 2 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` IN (12,14,15) [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[2019-05-08T20:39:19+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.005794s] [吞吐率：172.59req/s] [内存消耗：475.17kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:39:20+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.025590s] [吞吐率：39.08req/s] [内存消耗：1,338.13kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `user_id` = 2 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` IN (12,14,15) [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[2019-05-08T20:39:21+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/12
+[运行时间：0.005560s] [吞吐率：179.86req/s] [内存消耗：475.16kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:39:21+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/12
+[运行时间：0.018069s] [吞吐率：55.34req/s] [内存消耗：1,334.14kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/<id>',
+  'route' => 'api/:version.order/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+    'id' => '12',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_detail?id=12',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.001476s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `id` = 12 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` = 12 [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[2019-05-08T20:40:16+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.007629s] [吞吐率：131.08req/s] [内存消耗：475.17kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:40:16+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.022622s] [吞吐率：44.21req/s] [内存消耗：1,338.13kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `user_id` = 2 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` IN (12,14,15) [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[2019-05-08T20:40:23+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.005554s] [吞吐率：180.05req/s] [内存消耗：475.17kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:40:23+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/order/list
+[运行时间：0.023761s] [吞吐率：42.09req/s] [内存消耗：1,338.13kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.order/list',
+  'route' => 'api/:version.order/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/order_list',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order` WHERE  `data_state` = 1  AND `user_id` = 2 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_order_goods` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_order_goods` WHERE  `data_state` = 1  AND `order_id` IN (12,14,15) [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[2019-05-08T20:51:32+08:00] 192.168.211.1 OPTIONS www.fool-gb-shop.com/api/v1/user
+[运行时间：0.006147s] [吞吐率：162.68req/s] [内存消耗：475.18kb] [文件加载：44]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-05-08T20:51:32+08:00] 192.168.211.1 GET www.fool-gb-shop.com/api/v1/user
+[运行时间：0.015392s] [吞吐率：64.97req/s] [内存消耗：1,204.13kb] [文件加载：83]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user',
+  'route' => 'api/:version.User/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => true,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'token' => 'f5ed26e603cc76e796540c48f16fce80',
+  'referer' => 'http://localhost:8080/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'f5ed26e603cc76e796540c48f16fce80' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT `nickname`,`avatar`,`mobile`,`email` FROM `gb_user` WHERE  `data_state` = 1  AND `id` = 2 LIMIT 1 [ RunTime:0.001829s ]

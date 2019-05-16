@@ -1,0 +1,196 @@
+---------------------------------------------------------------
+[2019-04-27T17:47:43+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.026511s] [吞吐率：37.72req/s] [内存消耗：1,205.85kb] [文件加载：88]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '5ccb1b45-fb20-0759-30be-73102c47c212',
+  'token' => 'd2359722ce53b4760d482769962b5733',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'KBellX',
+  'refresh_token' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'd2359722ce53b4760d482769962b5733' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'KBellX'  AND `refresh_token` = '123456'  AND `update_at` >= '1556272063' LIMIT 1 [ RunTime:0.006468s ]
+[ error ] [4000]刷新token无效[/data/group_shop/application/api/service/token/Db.php:44]
+---------------------------------------------------------------
+[2019-04-27T17:52:03+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.012727s] [吞吐率：78.57req/s] [内存消耗：1,096.62kb] [文件加载：84]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '623f62ca-5335-2b66-31f4-bb873253a69f',
+  'token' => 'd2359722ce53b4760d482769962b5733',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'KBellX',
+  'refresh_token' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'd2359722ce53b4760d482769962b5733' LIMIT 1 [ RunTime:0.000308s ]
+[ error ] [3001]令牌失效过期[/data/group_shop/application/api/service/token/Db.php:66]
+---------------------------------------------------------------
+[2019-04-27T17:52:15+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.019637s] [吞吐率：50.92req/s] [内存消耗：1,096.62kb] [文件加载：84]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '618bb4fc-7dce-741a-67a0-39d7e1b4be4c',
+  'token' => 'd2359722ce53b4760d482769962b5733',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'KBellX',
+  'refresh_token' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006306s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'd2359722ce53b4760d482769962b5733' LIMIT 1 [ RunTime:0.000776s ]
+[ error ] [3001]令牌失效过期[/data/group_shop/application/api/service/token/Db.php:66]
+---------------------------------------------------------------
+[2019-04-27T17:52:54+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.005988s] [吞吐率：167.00req/s] [内存消耗：730.02kb] [文件加载：68]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => '3676f264-8bee-3a54-9784-e443eaa60751',
+  'token' => 'd2359722ce53b4760d482769962b5733',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'KBellX',
+  'refresh_token' => '123456',
+  'version' => 'v1',
+)
+---------------------------------------------------------------
+[2019-04-27T17:53:18+08:00] 192.168.211.1 POST www.fool-gb-shop.com/api/v1/user/refresh_token
+[运行时间：0.019023s] [吞吐率：52.57req/s] [内存消耗：1,202.37kb] [文件加载：87]
+[ info ] [ LANG ] /data/group_shop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/<version>.user/refresh_token',
+  'route' => 'api/:version.User/refreshToken',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'version' => 'v1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.fool-gb-shop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'origin' => 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop',
+  'postman-token' => 'f8ddd6f2-8c35-9d63-c77e-905486ce8333',
+  'token' => 'd2359722ce53b4760d482769962b5733',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'KBellX',
+  'refresh_token' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;dbname=group_buy_shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gb_user_token` [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `gb_user_token` WHERE  `data_state` = 1  AND `token` = 'KBellX'  AND `refresh_token` = '123456'  AND `update_at` >= '2019-04-26 17:53:18' LIMIT 1 [ RunTime:0.004415s ]
+[ error ] [4000]刷新token无效[/data/group_shop/application/api/service/token/Db.php:44]
